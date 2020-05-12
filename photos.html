@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>About Pitești</title>
+    <link rel="stylesheet" type="text/css" media = "screen" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <link rel="stylesheet" media="print" href="print.css" />
+    <script>
+        //At least one element, which has some behaviour, provided by JS, e.g. a button which does something when pressed
+        var container = document.getElementById("content");
+        var names = ["images/image1.jpg","images/image2.jpg","images/image3.jpg","images/image4.jpg","images/image5.jpg","images/image6.jpg","images/image7.jpg"];
+
+        i = 0
+        function next() {
+            i++;
+            if (i > 6) i = 0;
+            document.getElementById('image').src = names[i];
+        }
+
+        function previous() {
+            i--;
+            if (i < 0) i = 6;
+            document.getElementById('image').src = names[i];
+        }
+
+        function start() {
+            document.getElementById('image').src = names[0];
+        }
+
+    </script>
+</head>
+
+<body>
+   <div id="header" class="container">
+       <h1><a href="main.html">Pitești,&nbsp;</a>
+        <a href="https://en.wikipedia.org/wiki/Pite%C8%99ti" target = "_blank"><span>orașul meu!</span></a></h1>
+   </div>
+
+
+   <div id="navigation" class="container">
+       <ul id="nav">
+           <li><a href="main.html">Information</a></li>
+           <li><a href="history.html">History</a></li>
+           <li><a href="FC%20Arges.html">FC Argeș</a></li>
+           <li class="current_page_item"><a href="#">Photos</a></li>
+       </ul>
+   </div>
+
+
+   <div class="container" id="content" style="font-size:16px;">
+       <img src="images/image1.jpg" id="image" alt="image of pitesti">
+       <div id="butoane">
+           <a href="javascript:previous();"><img src="images/prev.png" style="border:0" alt="button for the previous photo"></a>
+           <a href="javascript:start();"><img src="images/home.png" style="border:0" alt="button for the first photo"></a>
+           <a href="javascript:next();"><img src="images/next.png" style="border:0" alt="button for the next photo"></a>
+       </div>
+   </div>
+
+   <div id="footer" class="container">
+    <p>site created by Marin Marian and Robert Nicolescu</p>
+   </div>
+
+</body>
+</html>

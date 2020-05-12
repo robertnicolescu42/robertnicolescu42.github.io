@@ -1,0 +1,181 @@
+html, body
+{
+    height: 100%;
+}
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background: #282828 url(images/bg01.png) repeat;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+    color: #919191;
+}
+
+.container
+{
+    margin: 0px auto;
+    width: 1200px;
+}
+
+h1, h2, h3
+{
+    margin: 0;
+    padding: 0;
+}
+
+p, ol, ul
+{
+    margin-top: 0;
+}
+
+ol, ul
+{
+    padding: 0;
+    list-style: none;
+}
+
+p
+{
+    line-height: 180%;
+}
+
+strong
+{
+}
+
+a
+{
+    color: #747474;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+/*  Header */
+#header
+{
+    padding: 3em 0em;
+    text-transform: uppercase;
+}
+
+#header h1 a
+{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #FFF;
+}
+
+#header span
+{
+    color: #8A2BE2;
+}
+
+/* navigation */
+#navigation ul
+{
+    margin: 0;
+    padding: 0px 0px 0px 0px;
+    list-style: none;
+    line-height: normal;
+    text-align: center;
+    background-color: #333;
+    border-bottom: 4px solid #8A2BE2;
+;
+}
+
+#navigation li
+{
+    display: inline-block;
+}
+
+#navigation a
+{
+    display: block;
+    padding: 0em 2em;
+    line-height: 80px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 700;
+    color: #FFF;
+}
+
+#navigation .current_page_item a
+{
+    background: #8A2BE2;
+    color: #FFF;
+}
+
+#navigation a:hover
+{
+    text-decoration: none;
+    color: #483D8B;
+}
+
+
+/* main */
+#controls {
+    text-align:right;
+}
+
+#content {
+    text-align:justify;
+}
+
+#content p {
+    color:#FFF;
+}
+#footer
+{
+    padding: 6em 0em;
+    font-size: 0.75em;
+    letter-spacing: 0.20em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #6A6A6A;
+}
+
+#footer a
+{
+    color: #747474;
+}
+
+/* Details */
+
+.banner {
+   margin-left: 45%;
+
+}
+
+
+#image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#butoane {
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.map{
+    width:30%;
+    float: right;
+    padding: 20px;
+}
+/* An unordered list with its own image for the bullets (CSS).  */
+.speciallist li{
+    background: url('images/icons8-penrose-square-100.png') no-repeat ;
+    padding-left: 30px;
+    padding-top: 3px;
+    padding-right: 5px;
+    background-size: 25px;
+    color: white;
+}

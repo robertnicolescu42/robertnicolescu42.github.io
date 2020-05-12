@@ -1,0 +1,15 @@
+/* Special formatting for printer, achieved by means of CSS  */
+@media print {
+    #navigation ul, #controls, #footer{
+        display:none;
+    }    
+
+    .map {
+    	width: 40%;
+    }
+
+    a {
+    	text-decoration: none;
+    	color: black;
+    }
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>About Pitești</title>
+    <link rel="stylesheet" type="text/css" media = "screen" href="styles.css">
+    <link rel="stylesheet" media="print" href="print.css" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <script>
+
+        function increaseFontSize() {
+            var element = document.getElementById('content');
+            var size = parseInt(element.style.fontSize) + 2;
+            element.style.fontSize = size + "px";
+        }
+
+        function decreaseFontSize() {
+            var element = document.getElementById('content');
+            var size = parseInt(element.style.fontSize) - 2;
+            element.style.fontSize = size + "px";
+        }
+
+    </script>
+</head>
+
+<body>
+   <div id="header" class="container">
+       <h1><a href="main.html">Pitești,&nbsp;</a>
+        <a href="https://en.wikipedia.org/wiki/Pite%C8%99ti" target = "_blank"><span>orașul meu!</span></a></h1>
+   </div>
+
+
+   <div id="navigation" class="container">
+       <ul id="nav">
+           <li class="current_page_item"><a href="#">Information</a></li>
+           <li><a href="history.html">History</a></li>
+           <li><a href="FC%20Arges.html">FC Argeș</a></li>
+           <li><a href="photos.html">Photos</a></li>
+       </ul>
+   </div>
+
+<!-- At least one element, which has some behaviour, provided by JS, e.g. a button which does something when pressed -->
+   <div id="controls" class="container">
+       <a href="javascript:increaseFontSize();"><img src="images/increase_font.png" style="height:30px; border:0" alt="font size increase"></a>
+       &nbsp;
+       <a href="javascript:decreaseFontSize();"><img src="images/decrease_font.png" style="height:30px; border:0" alt="font size decrease"></a>
+   </div>
+
+   <div id="content" class="container" style="font-size:16px;">
+      <p>Pitești (Питешти) is a city in Romania, located on the Argeș River (Арджеш). The capital and largest city of Argeș County, it is an important commercial and industrial center, as well as the home of two universities. Pitești is situated in the historical region of Muntenia. It lies on the A1 freeway connecting the city directly to the national capital Bucharest, being an important railway junction, with a classification yard in nearby Bălilești. The city houses the Arpechim oil refinery, and is a marketing center for the automotive industry, in particular Automobile Dacia.</p>
+      <p>The city is part of the historical region of Wallachia, situated in its north and in the westernmost part of its Muntenian subregion. It lies on the right bank of the Argeș, where the river meets its tributary, Râul Doamnei.</p>
+      <img src = "images/imagemap.jpg" class="map" alt="map of pitesti">
+      <!--An unordered list with its own image for the bullets (CSS). -->
+      <p>Here are some of the sister/twin cities Pitești has:
+        <ul class = "speciallist">
+          <li>Borlänge (Sweden)</li>
+          <li>Bydgoszcz (Poland)</li>
+          <li>Caserta (Italy)</li>
+          <li>Springhfield, Ohio (USA)</li>
+        </ul>
+      <p>Pitești is situated 280 metres (918.64 feet) above sea level, on terraces formed by the Argeș, and belongs to the southernmost section of the Getic Plateau (an area of foothills leading up to the Southern Carpathians).The Plateau is at its narrowest in the Pitești area, where it only reaches 30 km (19 miles) in width, as opposed to the 70–80 km (43–50 miles) average.The city has access to a piedmont plain, known as Câmpia Piteștilor ("Pitești Plain") and characterized by water-meadows.To the west, it abuts the Trivale Forest, which has been partly set up as a leisure park.</p>
+      <p>Pitești is adjacent to two reservoirs on the Argeș, in its Prundu area and in nearby Bascov (the Budeasa Dam).It is situated downstream from Lake Vidraru and upstream from the reservoir in Bălilești.</p>
+      <p>Pitești is one of the most industrialized cities in Romania. It is the center of the automotive industry in the country: the Automobile Dacia automaker is situated in the nearby town of Mioveni, and several other automobile parts manufacturers are located within its urban area (Dräxlmaier Group, Lear Corporation and Valeo). The city also houses the Arpechim oil refinery, part of the Petrom group. The plant, established as a state-owned company during communism, has traditionally been the center of controversy over its air pollution records. In 2007, the Ministry of the Environment withdrew Arpechim's permit, but Petrom contested the decision in court.The plant is scheduled to gradually reduce its activity over a period of several years, pending eventual closure.</p>
+   </div>
+
+   <div id="footer" class="container">
+    <p>site created by Marin Marian and Robert Nicolescu</p>
+   </div>
+
+</body>
+</html>
